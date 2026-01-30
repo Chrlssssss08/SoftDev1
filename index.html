@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="article.html"></form>
 
-     <div class="container">
-    <label for="Username"><b>Username</b></label>
-    <input type="text" name="Username" required>
-    <br>
+  <form class="login-form" action="main.html" method="post">
+    <h2>Login</h2>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" name="psw" required>
-    <br>
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
 
-    <button type="submit">
-    <a href="main.html">Login</a>
-    
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit" class="login-btn">Login</button>
+
+    <div class="extras">
+      <button type="reset" class="cancel-btn">Cancel</button>
+      <a href="#" class="forgot">Forgot password?</a>
+    </div>
+  </form>
+
 </body>
 </html>
