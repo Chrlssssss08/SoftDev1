@@ -183,3 +183,74 @@ footer {
   margin-top: 20px;
   font-size: 0.9rem;
 }
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header p {
+  color: #9ca3af;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.album {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.album img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.album h2 {
+  margin: 10px 0 5px;
+}
+
+.artist {
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.album ul {
+  list-style: none;
+  padding: 0;
+}
+
+.album li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 5px;
+}
