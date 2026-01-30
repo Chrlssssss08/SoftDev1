@@ -1,29 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html> <!-- HTML Document Type -->
+<html lang="en"> <!-- Root element with language attribute -->
+
+<head> <!-- Head section -->
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>Login</title> <!-- Page title -->
+  <link rel="stylesheet" href="style.css"> <!-- External CSS -->
 </head>
-<body>
 
+<body class="login-page"> <!-- Body content -->
+
+  <!-- FORM element (HTML Forms – Basic) -->
   <form class="login-form" action="main.html" method="post">
-    <h2>Login</h2>
 
+    <h2>Login</h2> <!-- Heading -->
+
+    <!-- LABEL + INPUT (Form Elements) -->
     <label for="username">Username</label>
     <input type="text" id="username" name="username" required>
 
+    <!-- LABEL + PASSWORD INPUT -->
     <label for="password">Password</label>
-    <!-- changed to text so the password is visible -->
-    <input type="text" id="password" name="password" required>
+    <input type="password" id="password" name="password" required>
 
-    <a href="main.html" class="login-btn">Login</a>
-    
+    <!-- BUTTON (Form Submission) -->
+    <button type="submit" class="login-btn">Login</button>
+
+    <!-- DIV container (Grouping elements) -->
     <div class="extras">
-      <button type="reset" class="cancel-btn">Cancel</button>
-      <a href="#" class="forgot">Forgot password?</a>
+      <button type="reset" class="cancel-btn">Cancel</button> <!-- Reset button -->
+      <a href="#" class="forgot">Forgot password?</a> <!-- Link -->
     </div>
+
   </form>
 
 </body>
