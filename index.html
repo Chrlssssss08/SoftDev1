@@ -12,30 +12,19 @@
     <h2>Login</h2>
 
     <label for="username">Username</label>
-    <input type="text" id="username" name="username" value="demoUser" required>
+    <input type="text" id="username" name="username" required>
 
     <label for="password">Password</label>
-    <input type="password" id="password" name="password" value="password123" required>
+    <!-- changed to text so the password is visible -->
+    <input type="text" id="password" name="password" required>
 
-    <label style="display:inline-block; margin-top:8px;">
-      <input type="checkbox" id="showPassword"> Show password
-    </label>
-
-    <button type="submit" class="login-btn">Login</button>
+    <a href="main.html" class="login-btn">Login</a>
     
     <div class="extras">
       <button type="reset" class="cancel-btn">Cancel</button>
       <a href="#" class="forgot">Forgot password?</a>
     </div>
   </form>
-
-  <script>
-    // Toggle password visibility
-    document.getElementById('showPassword').addEventListener('change', function (e) {
-      const pw = document.getElementById('password');
-      pw.type = this.checked ? 'text' : 'password';
-    });
-  </script>
 
 </body>
 </html>
