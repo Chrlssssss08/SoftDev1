@@ -1,26 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Mp3</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!DOCTYPE html> <!-- HTML Document Type -->
+<html lang="en"> <!-- Root element with language attribute -->
 
+<head> <!-- Head section -->
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>My Mp3</title> <!-- Page title -->
+  <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+</head>
+
+<body class="music-page"> <!-- Body content -->
+
+  <!-- DIV container (Grouping / Layout) -->
   <div class="container">
+
+    <!-- Semantic HEADER -->
     <header>
-      <h1>🎧 My Mp3</h1>
-      <p>A collection of my favorite albums</p>
+      <h1>🎧 My Mp3</h1> <!-- Heading -->
+      <p>A collection of my favorite albums</p> <!-- Paragraph -->
     </header>
 
+    <!-- Semantic MAIN -->
     <main class="album-grid">
 
-      <!-- Album 1 -->
-      <div class="album">
-        <img src="jcole.jpg" alt="2014 Forest Hills Drive">
-        <h2>2014 Forest Hills Drive</h2>
-        <p class="artist">J. Cole</p>
+      <!-- ===== ALBUM 1 ===== -->
+      <div class="album"> <!-- Div container -->
+        <img src="jcole.jpg" alt="2014 Forest Hills Drive"> <!-- Image -->
+        <h2>2014 Forest Hills Drive</h2> <!-- Subheading -->
+        <p class="artist">J. Cole</p> <!-- Paragraph -->
+
+        <!-- Unordered List -->
         <ul>
           <li>No Role Modelz <audio controls src="No Role Modelz.mp3"></audio></li>
           <li>Wet Dreamz <audio controls src="J. Cole - Wet Dreamz.mp3"></audio></li>
@@ -30,11 +38,12 @@
         </ul>
       </div>
 
-      <!-- Album 2 -->
+      <!-- ===== ALBUM 2 ===== -->
       <div class="album">
         <img src="Kdot1.webp" alt="DAMN.">
         <h2>DAMN.</h2>
         <p class="artist">Kendrick Lamar</p>
+
         <ul>
           <li>HUMBLE. <audio controls src="Kendrick Lamar - HUMBLE..mp3"></audio></li>
           <li>DNA. <audio controls src="DNA - Kendrick Lamar (AUDIO).mp3"></audio></li>
@@ -44,11 +53,12 @@
         </ul>
       </div>
 
-      <!-- Album 3 -->
+      <!-- ===== ALBUM 3 ===== -->
       <div class="album">
         <img src="Drake.jpg" alt="Certified Lover Boy">
         <h2>Certified Lover Boy</h2>
         <p class="artist">Drake</p>
+
         <ul>
           <li>Fair Trade <audio controls src="Drake - Fair Trade.mp3"></audio></li>
           <li>Way 2 Sexy <audio controls src="Drake - Way 2 Sexy.mp3"></audio></li>
@@ -58,11 +68,12 @@
         </ul>
       </div>
 
-      <!-- Album 4 -->
+      <!-- ===== ALBUM 4 ===== -->
       <div class="album">
         <img src="yeeeeeee.jpg" alt="My Beautiful Dark Twisted Fantasy">
         <h2>My Beautiful Dark Twisted Fantasy</h2>
         <p class="artist">Ye</p>
+
         <ul>
           <li>Dark Fantasy <audio controls src="Dark Fantasy.mp3"></audio></li>
           <li>Gorgeous <audio controls src="Gorgeous.mp3"></audio></li>
@@ -72,11 +83,12 @@
         </ul>
       </div>
 
-      <!-- Album 5 -->
+      <!-- ===== ALBUM 5 ===== -->
       <div class="album">
         <img src="swag.jpg" alt="SWAG">
         <h2>SWAG</h2>
         <p class="artist">Justin Bieber</p>
+
         <ul>
           <li>Daisies <audio controls src="DAISIES.mp3"></audio></li>
           <li>Walking Away <audio controls src="WALKING AWAY.mp3"></audio></li>
@@ -86,8 +98,9 @@
         </ul>
       </div>
 
-    </main>
-  </div>
+    </main> <!-- End MAIN -->
+
+  </div> <!-- End container -->
 
 </body>
 </html>
