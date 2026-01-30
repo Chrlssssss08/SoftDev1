@@ -1,7 +1,7 @@
 <!DOCTYPE html> <!-- HTML Document Type -->
 <html lang="en"> <!-- Root element with language attribute -->
 
-<head> <!-- Head section -->
+<head>
   <meta charset="UTF-8"> <!-- Character encoding -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
   <title>Login</title> <!-- Page title -->
@@ -10,25 +10,27 @@
 
 <body class="login-page"> <!-- Body content -->
 
-  <!-- FORM element (HTML Forms – Basic) -->
-  <form class="login-form" action="main.html" method="post">
+  <!-- FORM element -->
+  <!-- action="main.html" routes the user to the main page after login -->
+  <form class="login-form" action="main.html" method="get">
 
     <h2>Login</h2> <!-- Heading -->
 
-    <!-- LABEL + INPUT (Form Elements) -->
+    <!-- Username field -->
     <label for="username">Username</label>
     <input type="text" id="username" name="username" required>
 
-    <!-- LABEL + PASSWORD INPUT -->
+    <!-- Password field -->
     <label for="password">Password</label>
     <input type="password" id="password" name="password" required>
 
-    <!-- BUTTON (Form Submission) -->
+    <!-- Submit button -->
+    <!-- Clicking this sends the form and loads main.html -->
     <button type="submit" class="login-btn">Login</button>
 
-    <!-- DIV container (Grouping elements) -->
+    <!-- Extra actions -->
     <div class="extras">
-      <button type="reset" class="cancel-btn">Cancel</button> <!-- Reset button -->
+      <button type="reset" class="cancel-btn">Cancel</button> <!-- Clears inputs -->
       <a href="#" class="forgot">Forgot password?</a> <!-- Link -->
     </div>
 
