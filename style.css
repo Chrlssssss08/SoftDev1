@@ -1,286 +1,92 @@
+/* CSS Variables (Basic CSS Concept) */
 :root {
-  --orange: #f97316;
+  --primary: #667eea;
   --dark: #111827;
   --light: #f9fafb;
-  --accent: #2563eb;
 }
 
-
+/* Universal Selector */
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+/* ===== LOGIN PAGE STYLES ===== */
+.login-page {
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Background */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Form styling */
 .login-form {
   background: white;
   padding: 30px;
   width: 320px;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.login-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
+/* Labels */
 label {
+  font-weight: bold;
   display: block;
   margin-top: 10px;
-  font-weight: bold;
 }
 
+/* Inputs */
 input {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
 }
 
+/* Buttons */
 .login-btn {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 12px;
-  background: #667eea;
+  background: var(--primary);
   color: white;
-  border-radius: 5px;
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-
-.login-btn:hover {
-  background: #5a67d8;
-}
-
-.extras {
+  padding: 10px;
   margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cancel-btn {
-  background: #eee;
   border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.forgot {
-  font-size: 14px;
-  text-decoration: none;
-  color: #667eea;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--light);
-  color: var(--dark);
-  line-height: 1.6;
-}
-
-header {
-  background: var(--orange);
-  color: white;
-  padding: 20px 0;
-}
-
-header h1 {
-  margin: 0;
-  text-align: center;
-}
-
-nav {
-  text-align: center;
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.container {
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 0 15px;
-}
-
-.featured-img {
-  display: block;
-  max-width: 200px;
-  margin: 15px auto;
-}
-
-ul, ol {
-  margin-left: 20px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-
-th {
-  background: #f3f4f6;
-}
-
-#highlight-box {
-  margin-top: 15px;
-  padding: 12px;
-  background: var(--accent);
-  color: white;
-  border-radius: 6px;
-  text-align: center;
-}
-
-.iframe-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  margin-top: 15px;
-}
-
-.iframe-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-footer {
-  background: #e5e7eb;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;
-  font-size: 0.9rem;
-}
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  margin: 0;
+/* ===== MP3 PAGE STYLES ===== */
+.music-page {
   background: #0f172a;
   color: #e5e7eb;
 }
 
+/* Container */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 30px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-header h1 {
-  font-size: 2.5rem;
-}
-
-header p {
-  color: #9ca3af;
-}
-
+/* Album grid */
 .album-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
+  gap: 20px;
 }
 
+/* Album card */
 .album {
   background: #1e293b;
-  border-radius: 12px;
   padding: 15px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.album img {
-  width: 100%;
   border-radius: 10px;
 }
 
-.album h2 {
-  margin: 10px 0 5px;
+/* Images */
+.album img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.artist {
-  color: #94a3b8;
-  margin-bottom: 10px;
-}
-
-.album ul {
-  list-style: none;
-  padding: 0;
-}
-
-.album li {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
+/* Audio player */
 audio {
   width: 100%;
   margin-top: 5px;
 }
-
-/* ===== LOGIN PAGE FIX ===== */
-
-.login-form h2 {
-  color: #111827;
-}
-
-.login-form label {
-  color: #374151;
-}
-
-.login-form input {
-  color: #111827;
-  background: #ffffff;
-  border: 1px solid #cbd5f5;
-}
-
-.login-form input::placeholder {
-  color: #9ca3af;
-}
-
-.login-form {
-  background: #ffffff;
-}
-
-.login-btn {
-  color: #ffffff;
-}
-
